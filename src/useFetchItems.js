@@ -27,7 +27,7 @@ const useAppFetch = () => {
 
     dispatch(fetchStatusActions.markFetchingStarted());
 
-fetch("https://redux-backend-haqh.onrender.com/api/items", { signal })
+fetch("https://redux-backend-haqh.onrender.com/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchingFinished());
