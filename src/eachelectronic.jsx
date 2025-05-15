@@ -1,4 +1,4 @@
-import styles from "./Eachelectronics.module.css";
+import styles from "./eachelectronics.module.css";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { bagitemAction } from "./bag.js";
