@@ -1,3 +1,4 @@
+// useAppFetch.js
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -26,27 +27,21 @@ const useAppFetch = () => {
 
     dispatch(fetchStatusActions.markFetchingStarted());
 
-    fetch("https://redux-backend-haqh.onrender.com/items", { signal })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Failed to fetch data");
-        }
-        return res.json();
-      })
-      .then((data) => {
+    fetch("http://localhost:3000/items", { signal })
+      .then((res) => res.json())
+      .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchingFinished());
-
-        dispatch(browsingitemAction.addInitialItems(data.items));
-        dispatch(menitemAction.addInitialItems(data.items2));
-        dispatch(womenitemAction.addInitialItems(data.items3));
-        dispatch(beautyitemAction.addInitialItems(data.items4));
-        dispatch(sportsitemAction.addInitialItems(data.items5));
-        dispatch(houseitemAction.addInitialItems(data.items6));
-        dispatch(elctronicsitemAction.addInitialItems(data.items7));
-        dispatch(luggageitemAction.addInitialItems(data.items8));
-        dispatch(uniqueitemAction.addInitialItems(data.items9));
-        dispatch(featureitemAction.addInitialItems(data.items10));
-        dispatch(itemsAction.addInitialItems(data.itemall));
+        dispatch(browsingitemAction.addInitialItems(items.items));
+        dispatch(menitemAction.addInitialItems(items.items2));
+        dispatch(womenitemAction.addInitialItems(items.items3));
+        dispatch(beautyitemAction.addInitialItems(items.items4));
+        dispatch(sportsitemAction.addInitialItems(items.items5));
+        dispatch(houseitemAction.addInitialItems(items.items6));
+        dispatch(elctronicsitemAction.addInitialItems(items.items7));
+        dispatch(luggageitemAction.addInitialItems(items.items8));
+        dispatch(uniqueitemAction.addInitialItems(items.items9));
+        dispatch(featureitemAction.addInitialItems(items.items10));
+        dispatch(itemsAction.addInitialItems(items.itemall));
       })
       .catch((err) => {
         if (err.name === "AbortError") {
