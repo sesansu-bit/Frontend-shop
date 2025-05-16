@@ -4,11 +4,13 @@
     margin-top : 4rem;
     font-size: 2rem;
     font-family: "Protest Guerrilla", sans-serif;
-    padding-left : 40%;
-    padding-top : 0.5rem;
+   
     color:rgb(255, 255, 255);
     background: linear-gradient(90deg, rgb(255, 0, 149) 7%, rgb(13, 1, 40) 39%);
     max-width : 1303px;
+      display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 
@@ -60,6 +62,9 @@
     .sponserbanner{
         height :40px;
         font-size:1.2rem;
+          display: flex;
+   justify-content: center;
+   align-items: center;
   }
   .sponsercontainer{
         gap: 1rem; 

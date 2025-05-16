@@ -4,11 +4,13 @@
     margin-top : 4rem;
     font-size: 2rem;
     font-family: "Protest Guerrilla", sans-serif;
-    padding-left : 43%;
-    padding-top : 0.5rem;
+ 
     background: linear-gradient(90deg, #0f012a 40%, rgb(227, 227, 227) 100%);
     color:rgb(222, 195, 255);
     max-width : 1303px;
+      display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .category{
@@ -23,6 +25,7 @@
     height : auto; 
     overflow-y: auto; 
     overflow-x: hidden; 
+     place-items: center;
     max-width : 1303px;
 }
 .recommendcover{
@@ -223,6 +226,9 @@ margin-top : 0.5rem;
     .categorybanner{
         height :40px;
         font-size:1.2rem;
+          display: flex;
+   justify-content: center;
+   align-items: center;
  }
  .category{
     margin-top : 3rem;

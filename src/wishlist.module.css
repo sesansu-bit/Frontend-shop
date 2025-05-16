@@ -32,6 +32,8 @@
     gap: 2rem; 
     padding-left : 1.2rem;
     margin-top : 2.5rem;
+         place-items: center;
+
 }
 }
 @media (max-width :768px ) {

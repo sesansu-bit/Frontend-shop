@@ -349,7 +349,7 @@ transform: scale(1.1);
 
 
 
-@media (max-width: 768px) { 
+@media (max-width: 1095px) { 
     .navcover{
     top :0;
     left :0;
@@ -517,7 +517,7 @@ transform: scale(1.1);
 
 
 
- @media (max-width :480px ) { 
+ @media (max-width :686px ) { 
     .search{
         display:none;
         transition:all 0.3s;

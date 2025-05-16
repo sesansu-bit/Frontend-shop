@@ -11,6 +11,7 @@
     overflow-y: auto; 
     overflow-x: hidden; 
     max-width : 1303px;
+   place-items: center;
 }
 @media (max-width :480px ) {
     .womencontainer {
