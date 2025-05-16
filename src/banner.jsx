@@ -31,7 +31,7 @@ const Banner = () => {
 </Link>
 </div>
 <div className={styles["bannerimage"]}>
-  <img src="https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-08dc-620a-86a0-8c11f5a09b1e/raw?se=2025-04-22T01%3A29%3A19Z&sp=r&sv=2024-08-04&sr=b&scid=516d5260-8aa3-57fa-8051-545fd7d07153&skoid=a3336399-497e-45e5-8f28-4b88ecca3d1f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-21T16%3A26%3A03Z&ske=2025-04-22T16%3A26%3A03Z&sks=b&skv=2024-08-04&sig=w927b%2B4JnmE3JvUPyMSnHNBfOZNe4j/Ne2ZNJmRNs5s%3D"/>
+  <img src="/photo4.png.png"/>
 </div>
 </div>
 
