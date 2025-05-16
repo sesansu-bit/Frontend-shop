@@ -27,7 +27,7 @@ const useAppFetch = () => {
 
     dispatch(fetchStatusActions.markFetchingStarted());
 
-    fetch("http://localhost:3000/items", { signal })
+    fetch("https://newbackend-sypreen.onrender.com/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchingFinished());
