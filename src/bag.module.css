@@ -56,6 +56,10 @@
     position: relative;
     margin: 0;
   }
+  .leftcart{
+     left:0;
+
+  }
 }
 
 
