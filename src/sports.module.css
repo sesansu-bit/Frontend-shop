@@ -8,8 +8,7 @@
     padding: 2rem;
     padding-left : 2rem;
     height : auto; 
-    overflow-y: auto; 
-    overflow-x: hidden; 
+    padding-right: 2rem;
     max-width : 1303px;
 }
 @media (max-width :480px ) {

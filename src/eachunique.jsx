@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { bagitemAction } from "./bag.js";
 import { wishlistitemAction } from "./wishlist.js";
 import { useState } from "react";
+import { motion } from 'framer-motion';
+
 
 const Eachunique= ({item}) => {
   const dispatch = useDispatch();
@@ -39,7 +41,11 @@ const Eachunique= ({item}) => {
 
   return (
     <>
-      <div
+     < motion.div
+           initial={{ y: 60, opacity: 0 }}
+           whileInView={{ y: 0, opacity: 1 }}
+           transition={{ duration: 0.6 }}
+          viewport={{ once: false, amount: 0.2 }}
         className={styles["eachcontainer"]}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
@@ -105,7 +111,8 @@ const Eachunique= ({item}) => {
             </div>
           )}
         </div>
-      </div>
+        </motion.div>
+
     </>
   );
 };

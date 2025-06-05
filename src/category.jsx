@@ -12,7 +12,7 @@ CATEGORY
 <div className={styles["category"]}>
 <Link className={styles["link"]} to="/special">
         < motion.div
-           initial={{ y: 80, opacity: 0 }}
+           initial={{ y: 60, opacity: 0 }}
            whileInView={{ y: 0, opacity: 1 }}
            transition={{ duration: 0.6 }}
           viewport={{ once: false, amount: 0.2 }}

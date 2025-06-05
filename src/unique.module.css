@@ -19,11 +19,11 @@
     box-sizing: border-box; 
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
     padding: 11px;
-    padding-left : 3rem;
+    padding-left : 1rem;
     height : auto; 
-    overflow-y: auto; 
-    overflow-x: hidden; 
     max-width : 1303px;
+  padding-right: 3rem;
+
 }
 @media (max-width :480px ) {
     .uniquebanner{
@@ -34,7 +34,7 @@
    align-items: center;    }
     .uniquecontainer {
         gap: 1rem; 
-        padding-left : 1.1rem;
+        padding-left : 1rem;
         margin-top : 2.5rem;
              place-items: center;
 

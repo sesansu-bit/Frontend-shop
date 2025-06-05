@@ -1,7 +1,9 @@
 import styles from "./eachwishlist.module.css";
 import { useDispatch} from "react-redux";
 import {bagitemAction} from "./bag.js";
-import {wishlistitemAction} from "./wishlist.js";
+import { wishlistitemAction } from "./wishlist.js";
+import { motion } from 'framer-motion';
+
 const Eachwishlist= ({item}) => {
   const dispatch = useDispatch();
   const handleAddToBag = () => {
@@ -16,7 +18,12 @@ const Eachwishlist= ({item}) => {
 };
 return(
     <>
-<div className={styles["eachcontainer"]}>
+  < motion.div
+           initial={{ y: 60, opacity: 0 }}
+           whileInView={{ y: 0, opacity: 1 }}
+           transition={{ duration: 0.6 }}
+      viewport={{ once: false, amount: 0.2 }}
+      className={styles["eachcontainer"]}>
             <img src={item.image}/>
             <div className={styles["productrating"]}>{item.rating.stars} ⭐ | {item.rating.count}</div>
              <div className={styles["detailed"]}>
@@ -30,7 +37,7 @@ return(
                 
         <div className= {styles["addtocart"]} onClick={handleCombinedClick}>Add to Cart</div>
              </div>
-        </div>
+             </motion.div >
 
 </>
   );
