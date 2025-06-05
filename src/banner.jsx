@@ -1,5 +1,5 @@
 import styles from "./banner.module.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 const Banner = () => {
   const [isAnimating, setIsAnimating] = useState(false);
