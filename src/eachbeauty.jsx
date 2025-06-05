@@ -40,7 +40,7 @@ const Eachbeauty= ({item}) => {
 
   return (
     <>
-      < motion.div
+      <motion.div
            initial={{ y: 80, opacity: 0 }}
            whileInView={{ y: 0, opacity: 1 }}
            transition={{ duration: 0.6 }}
