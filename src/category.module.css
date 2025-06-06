@@ -244,7 +244,7 @@ margin-top : 0.5rem;
      box-sizing: border-box;
      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
      padding: 1rem;
-     padding-left: 1rem;
+     padding-left: 0.6rem;
      height: auto;
      overflow-y: none;
      place-items: center;
