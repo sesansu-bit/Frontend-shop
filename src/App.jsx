@@ -5,6 +5,7 @@ import { Outlet, useLocation, Navigate } from 'react-router-dom';
 import LoadingSpinner from "./Aloader.jsx";
 import useAppFetch from "./useFetchItems.js";
 import { useSelector } from "react-redux";
+import ScrollToTop from "./ScrollToTop"; 
 
 function App() {
   const location = useLocation();
@@ -28,13 +29,14 @@ function App() {
     return <LoadingSpinner />;
   }
 
-  // Auth check (don't redirect again if already on login)
+  // Auth check
   if (!isLoggedIn && location.pathname !== '/login') {
     return <Navigate to="/login" replace />;
   }
 
   return (
     <div style={{ backgroundColor: isLoginPage ? "#0c0025" : "white", minHeight: "100vh" }}>
+      <ScrollToTop /> 
       {showNavbar && <Navbar />}
       <Outlet />
       {showFooter && <Footer />}

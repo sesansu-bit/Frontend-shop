@@ -5,8 +5,8 @@ import { TiMicrophoneOutline } from "react-icons/ti";
 import { FaHeart } from "react-icons/fa6";
 import { IoBagHandle } from "react-icons/io5";
 import { MdOutlineExitToApp } from "react-icons/md";
-import { Link } from "react-router-dom";  // Import Link for navigation
-import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; 
+import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa6";
 import { FaBarsStaggered } from "react-icons/fa6";
 

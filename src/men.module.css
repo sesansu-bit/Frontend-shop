@@ -9,7 +9,7 @@
     padding-left : 2rem;
     height : auto; 
     max-width : 1303px;
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 @media (max-width :480px ) {
     .mencontainer {
