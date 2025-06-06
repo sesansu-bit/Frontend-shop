@@ -3,21 +3,21 @@ import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, 
 import storage from "redux-persist/lib/storage"; // Using localStorage as the storage engine
 
 // Importing all slices
-import authReducer from "./auth";
-import featureitemSlice from "./feature";
-import bagitemSlice from "./bag";
-import browsingitemSlice from "./browsing";
-import uniqueitemSlice from "./unique";
-import itemsSlice from "./items";
-import houseitemSlice from "./house";
-import menitemSlice from "./men";
-import sportsitemSlice from "./sports";
-import beautyitemSlice from "./beauty";
-import womenitemSlice from "./women";
-import wishlistitemSlice from "./wishlist";
-import luggageitemSlice from "./luggage";
-import electronicsitemSlice from "./electronics";
-import fetchStatusSlice from "./fetching";
+import authSlice from "./auth.js";
+import featureitemSlice from "./feature.js";
+import bagitemSlice from "./bag.js";
+import browsingitemSlice from "./browsing.js";
+import uniqueitemSlice from "./unique.js";
+import itemsSlice from "./items.js";
+import houseitemSlice from "./house.js";
+import menitemSlice from "./men.js";
+import sportsitemSlice from "./sports.js";
+import beautyitemSlice from "./beauty.js";
+import womenitemSlice from "./women.js";
+import wishlistitemSlice from "./wishlist.js";
+import luggageitemSlice from "./luggage.js";
+import electronicsitemSlice from "./electronics.js";
+import fetchStatusSlice from "./fetching.js";
 
 // Persist configuration
 const persistConfig = {
@@ -33,7 +33,7 @@ const persistConfig = {
 
 // Combining reducers
 const rootReducer = combineReducers({
-  auth: authReducer,
+  auth: authSlice.reducer,
   items: itemsSlice.reducer,
   browsingitem: browsingitemSlice.reducer,
   featureitem: featureitemSlice.reducer,
@@ -48,6 +48,7 @@ const rootReducer = combineReducers({
   beautyitem: beautyitemSlice.reducer,
   bagitem: bagitemSlice.reducer,
   fetchStatus: fetchStatusSlice.reducer,
+
 });
 
 // Wrapping reducers with persistReducer
