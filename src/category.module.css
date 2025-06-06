@@ -240,15 +240,16 @@ margin-top : 0.5rem;
      width: 100%;
      margin-top: 3.4rem;
      display: grid;
-     gap: 2rem;
+     gap: 1rem;
      box-sizing: border-box;
      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-     padding: 1rem;
-     padding-left: 0.6rem;
+     padding: 0rem;
+     padding-left: 0.4rem;
      height: auto;
      overflow-y: none;
      place-items: center;
      max-width: 1303px;
+     padding-right: 0 rem;
  }
  .category {
      scrollbar-width: none;
