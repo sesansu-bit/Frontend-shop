@@ -25,11 +25,13 @@ const useAppFetch = () => {
     const controller = new AbortController();
     const signal = controller.signal;
 
-    dispatch(fetchStatusActions.markFetchingStarted());
+    const fetchData = async () => {
+      try {
+        dispatch(fetchStatusActions.markFetchingStarted());
 
-    fetch("https://newbackend-sypreen.onrender.com/items", { signal })
-      .then((res) => res.json())
-      .then(({ items }) => {
+        const response = await fetch("https://newbackend-sypreen.onrender.com/items", { signal });
+        const { items } = await response.json();
+
         dispatch(fetchStatusActions.markFetchingFinished());
         dispatch(browsingitemAction.addInitialItems(items.items));
         dispatch(menitemAction.addInitialItems(items.items2));
@@ -42,14 +44,17 @@ const useAppFetch = () => {
         dispatch(uniqueitemAction.addInitialItems(items.items9));
         dispatch(featureitemAction.addInitialItems(items.items10));
         dispatch(itemsAction.addInitialItems(items.itemall));
-      })
-      .catch((err) => {
+
+      } catch (err) {
         if (err.name === "AbortError") {
           console.log("Fetch aborted due to unmount/navigation");
         } else {
           console.error("Fetch failed:", err);
         }
-      });
+      }
+    };
+
+    fetchData();
 
     return () => {
       controller.abort();
