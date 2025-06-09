@@ -1,6 +1,6 @@
 .wishlistcontainer {
     width : 100%;
-    margin-top : 70px;
+    margin-top : 69px;
     display: grid;
     gap: 4rem; 
     box-sizing: border-box; 
@@ -8,7 +8,6 @@
     padding: 2rem;
     padding-left : 2rem;
     height : auto; 
-    max-width : 1303px;
     padding-right: 2rem;
 }
 
@@ -16,7 +15,6 @@
     background-color: #09001c;
    position:fixed;
    height:100%;
-   width: 1303px;
    display: flex;
    justify-content: center;
    align-items: center;

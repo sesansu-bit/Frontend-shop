@@ -7,7 +7,7 @@
 .fullcart {
   height: 100%;
   width: 100%;
-  margin-top: 70px;
+  margin-top: 69px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -30,7 +30,7 @@
   background-color: #09001c;
   position: fixed;
   height: 100%;
-  width: 1303px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -8,7 +8,6 @@
    justify-content: center;
    align-items: center;
     background: linear-gradient(90deg, rgb(255, 0, 102) 7%, rgb(119, 8, 255) 29%);
-    max-width : 1303px;
 }
 .dealingcontainer{
     height :530px;
@@ -16,7 +15,6 @@
     position: relative;
     overflow: hidden;
     margin-top : 40px;
-    max-width : 1303px;
 }
 
   .slider {

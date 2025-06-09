@@ -6,7 +6,8 @@
     border:1px solid black;
     background-color: #0a021a;
     margin-top : 6rem;
-    max-width : 1303px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .footer_column {
     display: flex;

@@ -7,25 +7,24 @@
 .bannercover {
     margin: 0;
     display: flex;
-    height : 526px;
+    height : 576px;
     width :100%;
     margin-top : 55px;
     background: linear-gradient(45deg,  rgb(32, 19, 46) 57%,rgba(254,2,104,1) 51%);
-    max-width : 1303px;
 }
 
 .bannertext {
     height  : 400px;
     width : 30rem;
-    margin: 50px 42px;
+    margin: 50px 57px;
     cursor: pointer;
 
 }
 
 .bannerimage {
     height : 558px;
-    width : 28rem;
-    margin: 20px 48% ;
+    width : 44%;
+    margin: 4.4rem 45% ;
     cursor: pointer;
     position: absolute;
 }

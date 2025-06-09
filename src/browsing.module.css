@@ -10,12 +10,10 @@
    padding-top: 1rem;
     border-radius: 20px;
     color:#ff0066;
-    max-width : 1303px;
 }
 .browsingcover{
     border-radius: 20px;
     background-color: rgba(14, 3, 38, 0.943);
-    max-width : 1303px;
 }
 
 .browsingcontainer {
@@ -29,7 +27,6 @@
     height : auto; 
     padding-right: 3.1rem;
     padding-bottom :  1.5rem;
-    max-width : 1303px;
 }
 @media (max-width :480px ) {
     .browsingbanner{

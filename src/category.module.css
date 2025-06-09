@@ -7,7 +7,6 @@
  
     background: linear-gradient(90deg, #0f012a 40%, rgb(227, 227, 227) 100%);
     color:rgb(222, 195, 255);
-    max-width : 1303px;
       display: flex;
    justify-content: center;
    align-items: center;
@@ -25,7 +24,6 @@
     height: auto;
      overflow-y: none;
     place-items: center;
-    max-width: 1303px;
 }
 .category {
     scrollbar-width: none;

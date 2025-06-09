@@ -9,8 +9,7 @@
     padding-left : 2rem;
     height : auto; 
     padding-right: 2rem;
-    max-width : 1303px;
-         place-items: center;
+ place-items: center;
 
 }
 @media (max-width :480px ) {

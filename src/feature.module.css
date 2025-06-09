@@ -4,9 +4,7 @@
     margin-top : 4rem;
     font-size: 2rem;
     font-family: "Protest Guerrilla", sans-serif;
-    background: linear-gradient(90deg, rgba(254,2,104,1) 7%, rgb(127, 23, 255) 39%);
-    max-width : 1303px;
-    
+    background: linear-gradient(90deg, rgba(254,2,104,1) 7%, rgb(127, 23, 255) 39%);    
 }
 .featureban{
     height :100%;
@@ -28,7 +26,6 @@
     padding-left : 3rem;
     height : auto; 
      place-items: center;
-    max-width : 1303px;
     padding-right: 2rem;
 }
 
