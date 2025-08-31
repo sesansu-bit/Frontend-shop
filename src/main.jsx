@@ -1,30 +1,33 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App.jsx';
-import './index.css';
-
-// Pages
-import Men from './men.jsx';
-import Bag from './bag.jsx';
-import Women from './women.jsx';
-import Beauty from "./beauty.jsx";
-import Electronics from "./electronics.jsx";
-import Sports from "./sports.jsx";
-import Household from "./household.jsx";
-import Luggage from "./luggage.jsx";
-import Special from "./special.jsx";
-import Content from './content.jsx';
-import Login from './login.jsx';
-import Wishlist from './wishlist.jsx';
-import Welcome from './welcome.jsx'; 9
+import { StrictMode, Suspense, lazy } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
 
 // Router and Redux
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import sypreenstore, { persistor } from "./index.js"; // Import Redux store and persistor
-import { PersistGate } from "redux-persist/integration/react"; // Import PersistGate
+import sypreenstore, { persistor } from "./index.js"; 
+import { PersistGate } from "redux-persist/integration/react";
 
-// Define the router with all routes
+// ✅ Loader
+import Aloader from "./Aloader.jsx";
+
+// ✅ Lazy imports
+const Men = lazy(() => import("./men.jsx"));
+const Women = lazy(() => import("./women.jsx"));
+const Beauty = lazy(() => import("./beauty.jsx"));
+const Electronics = lazy(() => import("./electronics.jsx"));
+const Sports = lazy(() => import("./sports.jsx"));
+const Household = lazy(() => import("./household.jsx"));
+const Luggage = lazy(() => import("./luggage.jsx"));
+const Special = lazy(() => import("./special.jsx"));
+const Bag = lazy(() => import("./bag.jsx"));
+const Login = lazy(() => import("./login.jsx"));
+const Wishlist = lazy(() => import("./wishlist.jsx"));
+const Welcome = lazy(() => import("./welcome.jsx"));
+const Content = lazy(() => import("./content.jsx"));
+
+// Router with lazy-loaded components
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,18 +45,22 @@ const router = createBrowserRouter([
       { path: "/bag", element: <Bag /> },
       { path: "/login", element: <Login /> },
       { path: "/wishlist", element: <Wishlist /> },
-      { path: "/welcome", element: <Welcome /> } // ✅ New Welcome route
-    ]
-  }
+      { path: "/welcome", element: <Welcome /> },
+    ],
+  },
 ]);
 
-// Render the application
-createRoot(document.getElementById('root')).render(
+// Render with Suspense fallback
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Provider store={sypreenstore}>
       <PersistGate loading={null} persistor={persistor}>
-        <RouterProvider router={router} />
+        <Suspense fallback={<Aloader />}>
+          <RouterProvider router={router} />
+        </Suspense>
       </PersistGate>
     </Provider>
   </StrictMode>
 );
+
+export default Content;

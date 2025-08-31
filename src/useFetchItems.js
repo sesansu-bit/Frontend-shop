@@ -28,7 +28,7 @@ const useAppFetch = () => {
     const fetchData = async () => {
       try {
         dispatch(fetchStatusActions.markFetchingStarted());
-
+ 
         const response = await fetch("https://newbackend-sypreen.onrender.com/items", { signal });
         const { items } = await response.json();
 
