@@ -48,9 +48,10 @@
     margin-top :2rem ;
     border-radius: 17px;
     height :27px;
-    width :221px;
-    padding-left : 5.7rem;
-    padding-top : 0.3rem;
+    width :230px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
     cursor: pointer;
     box-shadow: 0 0 5px black;
     transition: all 0.4s;
