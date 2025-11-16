@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fullcart {
+  height: 100%;
+  width: 100%;
+  margin-top: 69px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftcart {
+  height: 100%;
+  width: 50%;
+}
+
+.rightcart {
+  height: 100%;
+  width: 49%;
+  top: 0;
+  margin-left: 50%;
+  margin-bottom: 10px;
+  position: fixed;
+}
+
+.add {
+  background-color: #09001c;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add p {
+  color: rgb(231, 213, 255); 
+  font-family: "Protest Guerrilla", sans-serif;
+  font-size: x-large; 
+}
+
+/* === Tablet and Mobile View: max 768px === */
+@media (max-width: 768px) {
+  .fullcart {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftcart,
+  .rightcart {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+  }
+  .leftcart{
+     left:0;
+
+  }
+}
+

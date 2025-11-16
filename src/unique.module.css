@@ -1,0 +1,46 @@
+.uniquebanner{
+    height :60px;
+    width :100%;
+    margin-top : 4rem;
+    font-size: 2rem;
+    font-family: "Protest Guerrilla", sans-serif;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+    background: linear-gradient(90deg, rgba(254,2,104,1) 7%, rgb(164, 90, 255) 39%);
+}
+
+.uniquecontainer {
+    width : 100%;
+    margin-top : 1.5rem;
+    display: grid;
+    gap: 4rem; 
+    box-sizing: border-box; 
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); 
+    padding: 11px;
+    padding-left : 1rem;
+    height : auto; 
+  padding-right: 3rem;
+
+}
+@media (max-width :480px ) {
+    .uniquebanner{
+        height :40px;
+        font-size:1.2rem;
+  display: flex;
+   justify-content: center;
+   align-items: center;    }
+    .uniquecontainer {
+        gap: 1rem; 
+        padding-left : 1rem;
+        margin-top : 2.5rem;
+             place-items: center;
+
+    }
+  }
+  @media (max-width :768px ) {
+    .uniquecontainer {
+        gap: 2.5rem; 
+    padding-left : 0.5rem;
+}
+}
