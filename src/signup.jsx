@@ -10,7 +10,7 @@ const Signup = () => {
   const [message, setMessage] = useState(""); 
   const navigate = useNavigate();
 
-  const BACKEND_URL = "http://localhost:2000"; 
+  const BACKEND_URL = "https://backend-sypreen-shop.onrender.com"; 
 
   // Manual signup
   const handleSubmit = async (e) => {
@@ -66,7 +66,7 @@ const Signup = () => {
   };
 
   return (
-    <GoogleOAuthProvider clientId="122589253037-h3kfs5tsdnkfkm0qqm7fntjk01jrfp2a.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="293608652932-mcur9n89d6hqb4qekveeaqp8p7u3r614.apps.googleusercontent.com">
       <div className={styles["darkback"]}>
         <div className={styles["logindetail"]}>
           <div className={styles["log"]}>Sign Up</div>
