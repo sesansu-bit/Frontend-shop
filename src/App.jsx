@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from "./navbar.jsx";
 import Footer from './footer.jsx';
-import { Outlet, useLocation, Navigate } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 import LoadingSpinner from "./Aloader.jsx";
 import useAppFetch from "./useFetchItems.js";
 import { useSelector } from "react-redux";
@@ -34,8 +34,7 @@ useAuth();
     return <LoadingSpinner />;
   }
 
-
-
+  
   return (
     <>
       <ScrollToTop /> 

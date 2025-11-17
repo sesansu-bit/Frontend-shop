@@ -8,7 +8,7 @@ const useBagFetch = () => {
   useEffect(() => {
     const loadCart = async () => {
       try {
-        const res = await fetch("http://localhost:2000/cartfetch", {
+        const res = await fetch("https://backend-shoppping-full.onrender.com/cartfetch", {
           method: "GET",
           credentials: "include" 
         });

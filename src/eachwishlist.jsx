@@ -10,7 +10,7 @@ const Eachwishlist = ({ item }) => {
 
 const handleRemoveWish = async () => {
   try {
-    const res = await fetch("http://localhost:2000/wishlistremove", {
+    const res = await fetch("https://backend-shoppping-full.onrender.com/wishlistremove", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ productId: item.id }),

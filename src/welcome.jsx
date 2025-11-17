@@ -13,7 +13,7 @@ useAuth();
   // Logout function
   const handleLogout = async () => {
     try {
-      const res = await fetch("http://localhost:2000/logout", {
+      const res = await fetch("https://backend-shoppping-full.onrender.com/logout", {
         method: "POST",
         credentials: "include",
       });

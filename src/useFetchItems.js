@@ -26,7 +26,7 @@ const useAppFetch = () => {
         dispatch(fetchStatusActions.markFetchingStarted());
 
         //  Backend returns all categories in one response
-        const res = await fetch("http://localhost:2000/api/products/all", {
+        const res = await fetch("https://backend-shoppping-full.onrender.com/api/products/all", {
           signal,
         }); 
 

@@ -22,7 +22,7 @@ const elementFound2 = wishlistItems.some((el) => el.id === item.id);
 
  const handleAddToBag = async () => {
   try {
-    const res = await fetch("http://localhost:2000/bagstore", {
+    const res = await fetch("https://backend-shoppping-full.onrender.com/bagstore", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ productId: String(item.id) }),
@@ -54,7 +54,7 @@ const elementFound2 = wishlistItems.some((el) => el.id === item.id);
 
 const handleRemove = async () => {
   try {
-    const res = await fetch("http://localhost:2000/bagremove", {
+    const res = await fetch("https://backend-shoppping-full.onrender.com/bagremove", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ productId: String(item.id) }),
@@ -75,7 +75,7 @@ const handleRemove = async () => {
 
 const handleAddToWishlist = async () => {
   try {
-    const res = await fetch("http://localhost:2000/wishliststore", {
+    const res = await fetch("https://backend-shoppping-full.onrender.com/wishliststore", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ productId: item.id }),

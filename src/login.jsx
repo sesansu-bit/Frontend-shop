@@ -9,7 +9,7 @@ const Login = () => {
   const [message, setMessage] = useState(""); 
   const navigate = useNavigate();
 
-  const BACKEND_URL = "https://backend-sypreen-shop.onrender.com";
+  const BACKEND_URL = "https://backend-shoppping-full.onrender.com";
 
   // Manual Login
   const handleSubmit = async (e) => {
@@ -18,7 +18,7 @@ const Login = () => {
     const formData = { email, password };
 
     try {
-      const res = await fetch(`${BACKEND_URL}/login`, { // ✅ Correct route
+      const res = await fetch(`${BACKEND_URL}/login`, { // Correct route
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include", // to send cookies
@@ -66,7 +66,7 @@ const Login = () => {
   };
 
   return (
-    <GoogleOAuthProvider clientId="293608652932-mcur9n89d6hqb4qekveeaqp8p7u3r614.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="122589253037-h3kfs5tsdnkfkm0qqm7fntjk01jrfp2a.apps.googleusercontent.com">
       <div className={styles["darkback"]}>
         <div className={styles["logindetail"]}>
           <div className={styles["log"]}>Log In</div>
