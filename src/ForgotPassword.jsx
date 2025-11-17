@@ -15,7 +15,7 @@ const ForgotPassword = () => {
     setMessage("Sending OTP...");
 
     try {
-      const res = await fetch("https://backend-sypreen-shop.onrender.com/api/send-otp", {
+      const res = await fetch("http://localhost:2000/api/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include", // important for sending/receiving cookies

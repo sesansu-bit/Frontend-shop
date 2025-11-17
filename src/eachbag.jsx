@@ -9,7 +9,7 @@ const Eachbag = ({ item }) => {
 
   const handleRemoveItem = async () => {
     try {
-      const res = await fetch("https://backend-sypreen-shop.onrender.com/bagremove", {
+      const res = await fetch("http://localhost:2000/bagremove", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ productId: item.id }),

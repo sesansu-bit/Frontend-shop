@@ -10,7 +10,7 @@ const Signup = () => {
   const [message, setMessage] = useState(""); 
   const navigate = useNavigate();
 
-  const BACKEND_URL = "https://backend-sypreen-shop.onrender.com"; 
+  const BACKEND_URL = "http://localhost:2000"; 
 
   // Manual signup
   const handleSubmit = async (e) => {

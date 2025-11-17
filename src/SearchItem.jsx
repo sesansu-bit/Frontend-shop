@@ -17,7 +17,7 @@ export default function SearchItem() {
       }
       setLoading(true);
       try {
-        const res = await fetch(`https://backend-sypreen-shop.onrender.com/search?q=${q}`);
+        const res = await fetch(`http://localhost:2000/search?q=${q}`);
         const data = await res.json();
         setSuggestions(data.suggestions || []);
       } catch (err) {

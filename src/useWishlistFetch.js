@@ -8,7 +8,7 @@ const useWishlistFetch = () => {
   useEffect(() => {
     const loadWishlist = async () => {
       try {
-        const res = await fetch("https://backend-sypreen-shop.onrender.com/wishlistfetch", {
+        const res = await fetch("http://localhost:2000/wishlistfetch", {
           method: "GET",
           credentials: "include" // cookies se token automatic
         });

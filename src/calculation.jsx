@@ -2,7 +2,7 @@ import styles from "./calculation.module.css";
 import { useSelector } from "react-redux";
 import axios from "axios";
 
-const BACKEND_URL = "https://backend-sypreen-shop.onrender.com";
+const BACKEND_URL = "http://localhost:2000";
 
 const Calculation = () => {
   

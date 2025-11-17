@@ -1,7 +1,7 @@
 // Welcome.jsx
 import { useSelector, useDispatch } from "react-redux";
 import styles from "./welcome.module.css";
-import { userSliceAction } from  "./UserSlice.js"; // path adjust kar
+import { userSliceAction } from  "./UserSlice.js";
 import { useAuth} from "./useAuth.js";
 
 const Welcome = () => {
@@ -13,7 +13,7 @@ useAuth();
   // Logout function
   const handleLogout = async () => {
     try {
-      const res = await fetch("https://backend-sypreen-shop.onrender.com/logout", {
+      const res = await fetch("http://localhost:2000/logout", {
         method: "POST",
         credentials: "include",
       });

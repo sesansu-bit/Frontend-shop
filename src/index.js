@@ -7,7 +7,6 @@ import featureitemSlice from "./feature.js";
 import bagitemSlice from "./bag.js";
 import browsingitemSlice from "./browsing.js";
 import uniqueitemSlice from "./unique.js";
-import itemsSlice from "./items.js";
 import houseitemSlice from "./house.js";
 import menitemSlice from "./men.js";
 import sportsitemSlice from "./sports.js";
@@ -26,14 +25,13 @@ const persistConfig = {
   whitelist: [
     "bagitem",
     "wishlistitem",
-    "items",
+    
     "user" // ✅ Persist user profile so login state survives refresh
   ],
 };
 
 // Combine reducers
 const rootReducer = combineReducers({
-  items: itemsSlice.reducer,
   browsingitem: browsingitemSlice.reducer,
   featureitem: featureitemSlice.reducer,
   uniqueitem: uniqueitemSlice.reducer,

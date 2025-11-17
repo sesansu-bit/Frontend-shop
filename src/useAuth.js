@@ -1,7 +1,7 @@
 // useAuth.js
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { userSliceAction } from "./UserSlice";
+import { userSliceAction } from "./UserSlice.js";
 
 export const useAuth = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ export const useAuth = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await fetch("https://backend-sypreen-shop.onrender.com/profile", {
+        const res = await fetch("http://localhost:2000/profile", {
           credentials: "include",
         });
         const data = await res.json();
