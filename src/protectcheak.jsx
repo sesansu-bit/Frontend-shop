@@ -5,7 +5,7 @@ const Protectcheak = ({ children }) => {
   const [tokenValid, setTokenValid] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:2000/api/verify-token", {
+    fetch("https://backend-sypreen-shop.onrender.com/api/verify-token", {
       credentials: "include", // cookie send
     })
       .then(res => res.ok ? setTokenValid(true) : setTokenValid(false))

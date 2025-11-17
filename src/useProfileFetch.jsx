@@ -8,7 +8,7 @@ const useProfileFetch = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await fetch("http://localhost:2000/profile");
+        const res = await fetch("https://backend-sypreen-shop.onrender.com/profile");
         const data = await res.json();
 
         if (data?.success) {

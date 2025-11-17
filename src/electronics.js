@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 const electronicsitemSlice=createSlice({
     name:"electronicsitem",
-    initialState:[  ],
+    initialState:[ ],
     reducers: {
         addInitialItems: (store, action) => {
             return action.payload;

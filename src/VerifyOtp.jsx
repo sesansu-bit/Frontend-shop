@@ -14,7 +14,7 @@ const VerifyOtp = () => {
     setMessage("Verifying OTP...");
 
     try {
-      const res = await fetch("http://localhost:2000/api/verify-otp", {
+      const res = await fetch("https://backend-sypreen-shop.onrender.com/api/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include", 
