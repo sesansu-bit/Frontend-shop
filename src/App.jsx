@@ -5,7 +5,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import LoadingSpinner from "./Aloader.jsx";
 import useAppFetch from "./useFetchItems.js";
 import { useSelector } from "react-redux";
-import ScrollToTop from "./ScrollToTop";
+import ScrollToTop from "./ScrollToTop.jsx";
 import useBagFetch from "./useBagFetch.js"; 
 import { useAuth} from "./useAuth.js";
 import useWishlistFetch from "./useWishlistFetch.js"; 

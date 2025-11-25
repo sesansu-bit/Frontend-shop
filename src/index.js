@@ -16,7 +16,7 @@ import wishlistitemSlice from "./wishlist.js";
 import luggageitemSlice from "./luggage.js";
 import electronicsitemSlice from "./electronics.js";
 import fetchStatusSlice from "./fetching.js";
-import userSlice from "./UserSlice.js"; // ✅ Add user slice
+import userSlice from "./UserSlice.js"; 
 
 // Persist configuration
 const persistConfig = {

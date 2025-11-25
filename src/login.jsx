@@ -66,7 +66,7 @@ const Login = () => {
   };
 
   return (
-    <GoogleOAuthProvider clientId="122589253037-h3kfs5tsdnkfkm0qqm7fntjk01jrfp2a.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="796776314888-hruit3hrgnupd96084ppb6l6qcjkhuhu.apps.googleusercontent.com">
       <div className={styles["darkback"]}>
         <div className={styles["logindetail"]}>
           <div className={styles["log"]}>Log In</div>

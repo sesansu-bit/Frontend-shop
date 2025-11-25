@@ -28,10 +28,11 @@ const useAppFetch = () => {
         //  Backend returns all categories in one response
         const res = await fetch("https://backend-shoppping-full.onrender.com/api/products/all", {
           signal,
+                  credentials: "include",
+
         }); 
 
         const data = await res.json();
-
         // 👇 Each category store ko update kar do once
         dispatch(menitemAction.addInitialItems(data.men || []));
         dispatch(womenitemAction.addInitialItems(data.women || []));

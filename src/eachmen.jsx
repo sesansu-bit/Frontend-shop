@@ -28,7 +28,7 @@ const elementFound2 = wishlistItems.some((el) => el.id === item.id);
       body: JSON.stringify({ productId: String(item.id) }),
       credentials: "include",
     });
-
+ 
     const data = await res.json();
 
     if (data.success) {
