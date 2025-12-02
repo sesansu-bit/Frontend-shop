@@ -18,7 +18,7 @@ const ForgotPassword = () => {
       const res = await fetch("https://backend-shoppping-full.onrender.com/api/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: "include", // important for sending/receiving cookies
+        credentials: "include", 
         body: JSON.stringify({ email }),
       });
 
